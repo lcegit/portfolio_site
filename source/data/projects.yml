@@ -1,0 +1,8 @@
+- name: My bootcamp site
+  description: Simple HTML5 I built during the prep course
+
+- name: FizzBuzz
+  description: My first Test driven ruby project
+
+- name: BMI calculator
+  description: Test driven javascript project
