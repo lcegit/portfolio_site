@@ -82,6 +82,7 @@ ignore "javascripts/script.js"
 
 # Build-specific configuration
 configure :build do
+  add_import_path "node_modules/foundation-sites/scss"
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
@@ -96,4 +97,6 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+  #
+
 end

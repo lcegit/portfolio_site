@@ -6,59 +6,61 @@
     %meta{content: 'ie=edge', 'http-equiv' => 'x-ua-compatible'}
     %meta{content: 'width=device-width, initial-scale=1.0', name:'viewport'}
     %title= current_resource.data.title
-    = stylesheet_link_tag 'style'
-    = stylesheet_link_tag 'style_modified'
     = javascript_include_tag 'modernizr'
+    = stylesheet_link_tag 'style'
+    = stylesheet_link_tag 'foundation/foundation.css'
+    = stylesheet_link_tag 'scss/foundation.scss'
+    = stylesheet_link_tag 'style_modified'
     %body{class: page_classes}
-
-      .title-bar.topbar-center-logo-mobile{'data-hide-for': 'medium', 'data-responsive-toggle': 'topbar-center-logo'}
+      .title-bar.topbar-center-logo-mobile{"data-hide-for" => "medium", "data-responsive-toggle" => "topbar-center-logo"}
         .title-bar-left
           .title-bar-title
-            %img{alt: '', src: 'https://placehold.it/100x39'}
-
-      .top-bar-left
-        %ul.menu.vertical.medium-horizontal
-          %ul.menu.dropdown{'data-dropdown-menu': ''}
-
-            -# -data.sitemap.each do |item|
-            -#   %li
-            -#     %a{href: "#{item[:link]}"}
-            -#       %if item[:children]
-            -#         =item[:children]
-            -#           %elsif
-            -#             =item[:title]
-            %li
-              %a{href: 'portfolio.html.haml'} Portfolio
-            %li
-              %a{href:'coursework.html'} Resume
-            %li
-              %a{href: 'coursework.html'} Bootcamp projects
-              %ul.menu
-                %li
-                  %a{href: ''} ATM machine sim
-                %li
-                  %a{href: 'https://lcegit.github.io/bmi_calculator'} BMI calculator
-                %li
-                  %a{href: 'slowfood.html'} Slow food challenge
-                %li
-                  %a{href: ''} Portfolio challenge
-                %li
-                  %a{href: ''} Software as a Service med Ruby on Rails
-                %li
-                  %a{href: ''} Midcourse project
-                %li
-                  %a{href: ''} Mobile app
-                %li
-                  %a{href: ''} Agile methodologies, advanced Rails, APIs
-                %li
-                  %a{href: ''} Final project
-            %li
-              %a{href: 'blog.html'} Blog
-            %li
-              %a{href: 'about.html'} About
-
+            %img{:alt => "", :src => "https://placehold.it/100x39"}
         .title-bar-right
-          %button.menu-icon{'data-toggle': 'topbar-center-logo', type: 'button'}
+          %button.menu-icon{"data-toggle" => "topbar-center-logo", :type => "button"}
+      #topbar-center-logo.top-bar.topbar-center-logo
+        .top-bar-left
+          %ul.menu.vertical.medium-horizontal
+            %li.menu-text Lisa Eriksson Designer / Project Manager / Front-End Wannabe
+            %br
+            %ul.menu.dropdown{"data-dropdown-menu" => ""}
+              %li
+                %a{:href => "index.html"} Home
+              %li
+                %a{:href => "blog.html"} Blog
+              %li
+                %a{:href => "portfolio.html"} Projects
+                %ul.menu
+                  %li
+                    %a{:href => "#"} ATM machine sim
+                  %li
+                    %a{:href => "https://lcegit.github.io/bmi_calculator/"} BMI calculator
+                  %li
+                    %a{:href => "#"} Slow food challenge
+                  %li
+                    %a{:href => "#"} Portfolio challenge
+                  %li
+                    %a{:href => "#"} Software as a Service med Ruby on Rails
+                  %li
+                    %a{:href => "#"} Midcourse project
+                  %li
+                    %a{:href => "#"} Mobile app
+                  %li
+                    %a{:href => "#"} Agile methodologies, advanced Rails, APIs
+                  %li
+                    %a{:href => "#"} Final project
+              %li
+                %a{:href => "about.html"} About
+
+    -# -data.sitemap.each do |item|
+    -#   %li
+    -#     %a{href: "#{item[:link]}"}
+    -#       %ul
+    -#         =if item[:children]
+    -#           =item[:children]
+    -#          =else
+    -#            =item[:title]
+
 
     -#
     -# .projects
@@ -69,5 +71,5 @@
     -#
 
     = yield
-    = partial 'partials/footer'
     = javascript_include_tag  'all'
+    = partial 'partials/footer'

@@ -1,4 +1,5 @@
 @import 'foundation';
+@import 'sass/variables';
 
 body {
   padding: 0;
@@ -31,10 +32,12 @@ h7 {
   text-decoration: none;
   cursor: pointer;
 }
+
 a:hover,
 a:focus {
   color: #1468a0;
 }
+
 a img {
   border: 0;
 }
@@ -87,6 +90,16 @@ a img {
 
 .menu .menu-text {
   color: #ffffff;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .dropdown.menu .has-submenu.is-down-arrow > a::after {
@@ -97,7 +110,7 @@ a img {
   background: url('https://farm9.staticflickr.com/8886/18131958745_47433be3b8_b.jpg')
     60% no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 40vh;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
