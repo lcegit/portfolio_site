@@ -8,58 +8,75 @@
     %title= current_resource.data.title
     = javascript_include_tag 'modernizr'
     = stylesheet_link_tag 'style'
-    = stylesheet_link_tag 'foundation/foundation.css'
-    = stylesheet_link_tag 'scss/foundation.scss'
+    = stylesheet_link_tag 'foundation/foundation'
+    = stylesheet_link_tag 'scss/foundation'
     = stylesheet_link_tag 'style_modified'
     %body{class: page_classes}
-      .title-bar.topbar-center-logo-mobile{"data-hide-for" => "medium", "data-responsive-toggle" => "topbar-center-logo"}
-        .title-bar-left
-          .title-bar-title
-            %img{:alt => "", :src => "https://placehold.it/100x39"}
-        .title-bar-right
-          %button.menu-icon{"data-toggle" => "topbar-center-logo", :type => "button"}
-      #topbar-center-logo.top-bar.topbar-center-logo
-        .top-bar-left
-          %ul.menu.vertical.medium-horizontal
-            %li.menu-text Lisa Eriksson Designer / Project Manager / Front-End Wannabe
-            %br
-            %ul.menu.dropdown{"data-dropdown-menu" => ""}
-              %li
-                %a{:href => "index.html"} Home
-              %li
-                %a{:href => "blog.html"} Blog
-              %li
-                %a{:href => "portfolio.html"} Projects
-                %ul.menu
-                  %li
-                    %a{:href => "#"} ATM machine sim
-                  %li
-                    %a{:href => "https://lcegit.github.io/bmi_calculator/"} BMI calculator
-                  %li
-                    %a{:href => "#"} Slow food challenge
-                  %li
-                    %a{:href => "#"} Portfolio challenge
-                  %li
-                    %a{:href => "#"} Software as a Service med Ruby on Rails
-                  %li
-                    %a{:href => "#"} Midcourse project
-                  %li
-                    %a{:href => "#"} Mobile app
-                  %li
-                    %a{:href => "#"} Agile methodologies, advanced Rails, APIs
-                  %li
-                    %a{:href => "#"} Final project
-              %li
-                %a{:href => "about.html"} About
 
-    -# -data.sitemap.each do |item|
-    -#   %li
-    -#     %a{href: "#{item[:link]}"}
-    -#       %ul
-    -#         =if item[:children]
-    -#           =item[:children]
-    -#          =else
-    -#            =item[:title]
+      -data.sitemap.each do |item|
+        %ul
+          %a{href: "#{item.link}"}
+            =item[:title]
+            =if item.children != nil
+              %ul
+                %a{href: "länkhewj"}
+                  ="hej"
+
+        -# %ul
+        -#   %a{href: '#{item[:link]}'}
+        -#     %li
+        -#       =item[:title]
+        -#       =if item.children != nil
+        -#         %li
+        -#           =item.children[0][:title]
+              -# =if item.children != nil
+              -#   -# =item.children.each do |child|
+              -#   -#   %ul
+              -#   -#     %a{href: '#{child[:link]}'}
+              -#   -#       %li
+              -#   -#         =child[:title]
+
+      -# .title-bar.topbar-center-logo-mobile{'data-hide-for': 'medium', 'data-responsive-toggle': 'topbar-center-logo'}
+      -#   .title-bar-left
+      -#     .title-bar-title
+      -#       %img{alt: '', src: 'https://placehold.it/100x39'}
+      -#   .title-bar-right
+      -#     %button.menu-icon{'data-toggle': 'topbar-center-logo', type: 'button'}
+      -# #topbar-center-logo.top-bar.topbar-center-logo
+      -#   .top-bar-left
+      -#     %ul.menu.vertical.medium-horizontal
+      -#       %li.menu-text Lisa Eriksson Designer / Project Manager / Front-End Wannabe
+      -#       %br
+      -#       %ul.menu.dropdown{'data-dropdown-menu' => ''}
+      -#         %li
+      -#           %a{href:'index.html'} Home
+      -#         %li
+      -#           %a{href:'blog.html'} Blog
+      -#         %li
+      -#           %a{href:'resume.html'} Resume
+      -#         %li
+      -#           %a{href:'portfolio.html'} Projects
+      -#           %ul.menu
+      -#             %li
+      -#               %a{href:'#'} ATM machine sim
+      -#             %li
+      -#               %a{href:'https://lcegit.github.io/bmi_calculator/'} BMI calculator
+      -#             %li
+      -#               %a{href:'#'} Slow food challenge
+      -#             %li
+      -#               %a{href:'#'} Portfolio challenge
+      -#             %li
+      -#               %a{href:'#'} Software as a Service med Ruby on Rails
+      -#             %li
+      -#               %a{href:'#'} Midcourse project
+      -#             %li
+      -#               %a{href:'#'} Mobile app
+      -#             %li
+      -#               %a{href:'#'} Agile methodologies, advanced Rails, APIs
+      -#             %li
+      -#               %a{href:'#'} Final project
+      -#         %li
+      -#           %a{href: 'about.html'} About
 
 
     -#

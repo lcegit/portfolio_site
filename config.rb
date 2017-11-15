@@ -15,6 +15,15 @@ compass_config do |config|
   config.javascripts_dir = "javascripts"
 end
 
+helpers do
+  def display_date
+    Date.today
+  end
+
+end
+
+
+
 ###
 # Page options, layouts, aliases and proxies
 ###

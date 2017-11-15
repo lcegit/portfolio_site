@@ -1,5 +1,5 @@
-@import 'foundation';
-@import 'sass/variables';
+@import '/foundation/foundation';
+@import 'sass/_variables';
 
 body {
   padding: 0;
@@ -8,7 +8,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
-  background: #fefefe;
+  background: #2c3840;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -16,6 +16,10 @@ body {
 h1 {
   font-family: 'PT Sans', sans-serif;
   color: #0066ff;
+}
+
+h4 {
+  font-family: 'PT Sans', sans-serif;
 }
 
 h6 {
@@ -108,9 +112,9 @@ a img {
 
 .hero-section {
   background: url('https://farm9.staticflickr.com/8886/18131958745_47433be3b8_b.jpg')
-    60% no-repeat;
+    70% no-repeat;
   background-size: cover;
-  height: 40vh;
+  height: 60vh;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -126,4 +130,24 @@ a img {
 .hero-section .hero-section-text {
   color: #fefefe;
   text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+.footer {
+  background: #2c3840;
+  color: #ffffff;
+  padding: 3em;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.row-padding {
+  padding-top: 3em;
 }

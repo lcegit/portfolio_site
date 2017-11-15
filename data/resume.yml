@@ -1,0 +1,16 @@
+- title: Forsman & Bodenfors Factory
+  details: Responsiblities include developing programmatic digital campaigns and
+coaching digital producers.
+
+- title: Portfolio
+  link: portfolio.html
+  children:
+    -
+      title: "Item 1"
+      path: "/portfolio/item1"
+
+      title: "Item 2"
+      path: "/portfolio/item2"
+
+- title: About
+  link: about.html
