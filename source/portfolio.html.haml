@@ -5,39 +5,8 @@ title: Portfolio page
 .row
   .row-padding
     .row.small-up-2.medium-up-3.large-up-4
-      .column
-        %img.thumbnail{:src => "https://placehold.it/550x550"}/
-        %h5 My Site
-      .column
-        %img.thumbnail{:src => "https://placehold.it/550x550"}/
-        %h5 My Site
-      .column
-        %img.thumbnail{:src => "https://placehold.it/550x550"}/
-        %h5 My Site
-      .column
-        %img.thumbnail{:src => "https://placehold.it/550x550"}/
-        %h5 My Site
-      .column
-        %img.thumbnail{:src => "https://placehold.it/550x550"}/
-        %h5 My Site
-      .column
-        %img.thumbnail{:src => "https://placehold.it/550x550"}/
-        %h5 My Site
-      .column
-        %img.thumbnail{:src => "https://placehold.it/550x550"}/
-        %h5 My Site
-      .column
-        %img.thumbnail{:src => "https://placehold.it/550x550"}/
-        %h5 My Site
-      .column
-        %img.thumbnail{:src => "https://placehold.it/550x550"}/
-        %h5 My Site
-      .column
-        %img.thumbnail{:src => "https://placehold.it/550x550"}/
-        %h5 My Site
-      .column
-        %img.thumbnail{:src => "https://placehold.it/550x550"}/
-        %h5 My Site
-      .column
-        %img.thumbnail{:src => "https://placehold.it/550x550"}/
-        %h5 My Site
+      -data.projects.each do |project|
+        .column
+          %img= image_tag project[:img]
+          %h5= project[:name]
+          %h7= project[:description]

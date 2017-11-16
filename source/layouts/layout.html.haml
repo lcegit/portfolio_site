@@ -23,13 +23,14 @@
         %top-bar-left
           %ul.menu.vertical.medium-horizontal
             %li.menu-text Lisa Eriksson Designer / Project Manager / Front-End Wannabe
-            %ul.menu.dropdown{'data-dropdown-menu' => 'menu'}
-            -data.sitemap.each do |item|
-              %li= link_to item[:title], item[:link]
-              -if item.children != nil
-                %ul.menu
-                  -item.children.each do |child|
-                    %li= link_to child[:title], child[:link]
+            %ul.menu.dropdown{'data-dropdown-menu' => ''}
+              -data.sitemap.each do |item|
+                %li= link_to item[:title], item[:link]
+                -if item.children != nil
+                  %ul.menu
+                    -item.children.each do |child|
+                      %li= link_to child[:title], child[:link]
+
 
       -#
       -# -data.sitemap.each do |item|

@@ -2,15 +2,25 @@
 Title: Resumé
 ---
 
-.row
+%row
   .row-padding
-    .grid-x.grid-margin-x
-      .small-4.cell
-        %h4 Professional experience
-      .auto.cell
-      .auto.cell
-    .grid-x.grid-margin-x
-      .small-4.cell
-        %h6 Job 1
-      .auto.cell Whatever's left!
-      .auto.cell Whatever's left!
+  -data.projects.each do |projects|
+    %grid-x.grid-margin-x
+      %small-2.cell
+      %small-2.cell= projects[:name]
+      %small-2.cell= projects[:description]
+      %small-2.cell
+
+  -# .row-padding
+  -#   .grid-x.grid-margin-x
+  -#     .small-2.cell
+  -#       -data.resume.each do |resume|
+  -#         %li= resume[:title]
+  -#         %small-2.cell
+  -#           %li= resume[:details]
+  -#         %grid-x.grid-margin-x
+  -#           %small-3.cell
+  -#           %small-2.cell
+  -#             %h6 Job 1
+  -#           %small-2.cell Whatever's left!
+  -#           %small-2.cell Whatever's left!
