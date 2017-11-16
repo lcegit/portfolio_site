@@ -17,10 +17,12 @@
         %ul
           %a{href: "#{item.link}"}
             =item[:title]
-            =if item.children != nil
-              %ul
-                %a{href: "länkhewj"}
-                  ="hej"
+            -if item.children != nil
+              -item.children.each do |child|
+                %ul
+                  %a{href: "#{child.link}"}
+                    %li
+                      =child[:title]
 
         -# %ul
         -#   %a{href: '#{item[:link]}'}
@@ -29,12 +31,12 @@
         -#       =if item.children != nil
         -#         %li
         -#           =item.children[0][:title]
-              -# =if item.children != nil
-              -#   -# =item.children.each do |child|
-              -#   -#   %ul
-              -#   -#     %a{href: '#{child[:link]}'}
-              -#   -#       %li
-              -#   -#         =child[:title]
+        -#       =if item.children != nil
+        -#         =item.children.each do |child|
+        -#           %ul
+        -#             %a{href: '#{child[:link]}'}
+        -#               %li
+        -#                 =child[:title]
 
       -# .title-bar.topbar-center-logo-mobile{'data-hide-for': 'medium', 'data-responsive-toggle': 'topbar-center-logo'}
       -#   .title-bar-left
