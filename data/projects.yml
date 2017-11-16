@@ -1,7 +1,7 @@
 - name: My bootcamp site
   description: Simple HTML5 I built during the prep course
   img: /images/portfolio_placeholder.jpg
-  link:
+  link: https://lcegit.github.io/
 
 - name: FizzBuzz
   description: My first Test driven ruby project
@@ -17,7 +17,7 @@
   description: Cooper test description
   img: /images/portfolio_placeholder.jpg
   link:
-     
+
 - name: Slow food
   description: Slow food description
   img: /images/portfolio_placeholder.jpg
