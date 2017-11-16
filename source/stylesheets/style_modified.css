@@ -13,25 +13,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-  font-family: 'PT Sans', sans-serif;
-  color: #0066ff;
-}
-
-h4 {
+h1, h2, h3, h4, h5, h6, h7 {
   font-family: 'PT Sans', sans-serif;
 }
 
-h5 {
-  font-family: 'PT Sans', sans-serif;
-}
-
-h6 {
-  font-family: 'PT Sans', sans-serif;
-}
-
-h7 {
-  font-family: 'PT Sans', sans-serif;
+.li {
+  color: #FFFFFF;
 }
 
 .menu dropdown a {
@@ -115,10 +102,14 @@ a img {
 }
 
 .hero-section {
-  background: url('https://farm9.staticflickr.com/8886/18131958745_47433be3b8_b.jpg')
-    70% no-repeat;
+  background: url('images/home_background_image_01.jpg')
+    60% no-repeat;
   background-size: cover;
-  height: 60vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 50vh;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -133,7 +124,7 @@ a img {
 
 .hero-section .hero-section-text {
   color: #fefefe;
-  text-shadow: 1px 1px 2px #0a0a0a;
+  /*text-shadow: 1px 1px 1px #0a0a0a;*/
 }
 
 .footer {

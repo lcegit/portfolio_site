@@ -1,14 +1,13 @@
 
 %footer
-  -# .row  
+  -# .row
   .footer.footer-nav.row.expanded.collapse
     .footer-nav-left
     .footer-nav-center
       %ul.menu
-        %li
-          %a{href: 'http://www.linkedin.com'} LinkedIn
-        %li
-          %a{href: 'http://www.behance.com'} Behance
-        %li
-          %a{href: 'http://www.instagram.com'} Instagram
+        = link_to 'LinkedIn', 'https://www.linkedin.com/in/lisaceriksson/'
+        = link_to 'Behance', 'https://www.behance.net/lisaeriksson'
+        %p
+          #{mail_to 'lisa.c.eriksson@gmail.com', "Email", :cc => "lisa.c.eriksson@gmail.com"}
+
     .footer-nav-right

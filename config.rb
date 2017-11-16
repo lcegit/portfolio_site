@@ -22,8 +22,6 @@ helpers do
 
 end
 
-
-
 ###
 # Page options, layouts, aliases and proxies
 ###

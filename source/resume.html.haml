@@ -3,13 +3,13 @@ Title: Resumé
 ---
 
 %row
-  .row-padding
-  -data.projects.each do |projects|
+  %row-padding
     %grid-x.grid-margin-x
-      %small-2.cell
-      %small-2.cell= projects[:name]
-      %small-2.cell= projects[:description]
-      %small-2.cell
+    -data.resume.each do |resume|
+      %small-4.cell
+      %small-4.cell= resume[:company]
+      %small-4.cell= resume[:role]
+      %small-4.cell= resume[:details]
 
   -# .row-padding
   -#   .grid-x.grid-margin-x

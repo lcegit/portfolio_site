@@ -8,31 +8,53 @@
     %title= current_resource.data.title
     = javascript_include_tag 'modernizr'
     = stylesheet_link_tag 'style'
+    = stylesheet_link_tag 'scss/foundation'
     = stylesheet_link_tag 'foundation/foundation'
     = stylesheet_link_tag 'scss/foundation'
     = stylesheet_link_tag 'style_modified'
+    -# = image_link_tag 'images'
     %body{class: page_classes}
 
       %title-bar.topbar-center-logo-mobile{'data-hide-for' => 'medium', 'data-responsive-toggle' => 'topbar-center-logo'}
         %title-bar-left
           %title-bar-title
             %img{alt: '', src: 'https://placehold.it/100x39'}
-        %title-bar-right
-          %button.menu-icon{'data-toggle': 'topbar-center-logo', type: 'button'}
-      %topbar-center-logo.top-bar.topbar-center-logo
-        %top-bar-left
-          %ul.menu.vertical.medium-horizontal
-            %li.menu-text Lisa Eriksson Designer / Project Manager / Front-End Wannabe
-            %ul.menu.dropdown{'data-dropdown-menu' => ''}
+      -#   %title-bar-right
+      -#     %button.menu-icon{'data-toggle': 'topbar-center-logo', type: 'button'}
+      -# %topbar-center-logo.top-bar.topbar-center-logo
+      %top-bar-left
+        %ul.menu.vertical.medium-horizontal
+          %li.menu-text Lisa Eriksson Designer / Project Manager / Front-End Wannabe
+          %ul.dropdown.menu{"data-dropdown-menu" => ""}
+            %li
               -data.sitemap.each do |item|
                 %li= link_to item[:title], item[:link]
-                -if item.children != nil
+                -if item[:title] == 'Portfolio'
                   %ul.menu
-                    -item.children.each do |child|
-                      %li= link_to child[:title], child[:link]
+                    -data.projects.each do |project|
+                      %li= link_to project[:name], project[:link]
 
 
-      -#
+              -# %ul.menu
+              -#   %a{href: "#{item.link}"}
+              -#     =item[:title]
+              -#     -if item[:title] == 'Portfolio'
+              -#       -data.projects.each do |project|
+              -#         %li= link_to project[:name], project[:link]
+
+                  -# -if item.children != nil
+                    -# -item.children.each do |child|
+                    -#   %ul
+                    -#     %a{href: "#{child.link}"}
+                    -#       %li
+                    -#         =child[:title]
+
+              -# %ul.menu= link_to item[:title], item[:link]
+              -# -if item[:title] == 'Portfolio'
+              -#   -data.projects.each do |project|
+              -#     %li= link_to project[:name], project[:link]
+
+      -# -#
       -# -data.sitemap.each do |item|
       -#   %ul
       -#     %a{href: "#{item.link}"}

@@ -1,16 +1,18 @@
 ---
 title: Lisa's portfolio site
 ---
--# .top-bar-center
--# .row
 
 .row
   .hero-section
     .hero-section-text
-      - data.projects.each do |projects|
-        %li= projects[:name]
+      - data.home_message.each do |home|
+        %h1= home[:name]
+        %h3= home[:description]
 
 %row
+
+
+
 
   -# .medium-6.columns
   -#   %h3 Say hi
@@ -25,67 +27,3 @@ title: Lisa's portfolio site
   -#     Message
   -#     %textarea{placeholder: 'holla at a designerd'}
   -#   %input.button.expanded{type: 'submit', value: 'Submit'}
-
--#
--# .medium-6.columns.medium-push-6
--#     -# %img.thumbnail{:src => "https://placehold.it/750x350"}
--#   .medium-6.columns.medium-pull-6
--#     %h2 Prep course
--#     %p
--#     %li Week 1: Git
--#     %li Week 2: Ruby
--#     %li Week 3: Ruby and testing with RSpec
--#     %li Week 4: JavaScript and jQuery
--# .row.padding
--#   -# .medium-4.columns
--#   -#   %h3
--#   -#     %a{:href => "goals.html"} Course work
--#   -#   %p
--#   .medium-4.columns
--#     %h3
--#     %p
--#   .medium-4.columns
--#     %h3
--#     %p
--# %hr/
--# .row.column
--#   %ul.vertical.medium-horizontal.menu.expanded.text-center
--#     %li
--#       %a{:href => "https://github.com/lcegit", :target => "_blank"}
--#         .stat My Github repo
--#         %span A work in progress
--#     %li
--#       %a{:href => "https://dribbble.com/"}
--#         .stat DRIBBLE
--#         %span More inspo
--# %hr/
--# .row.column
--#
--#   %h3 Coming soon...
--# .row.medium-up-3.large-up-4
--#   .column
--#     %img.thumbnail{:src => "https://placehold.it/550x550"}
--#   .column
--#     %img.thumbnail{:src => "https://placehold.it/550x550"}
--#   .column
--#     %img.thumbnail{:src => "https://placehold.it/550x550"}
--#   .column
--#     %img.thumbnail{:src => "https://placehold.it/550x550"}
-
--#       .row
--#         .large-4.medium-4.columns
--#           %a{:href => "http://foundation.zurb.com/sites/docs/"} Foundation Documentation
--#           %p Everything you need to know about using the framework.
--#         .large-4.medium-4.columns
--#           %a{:href => "http://zurb.com/university/code-skills"} Foundation Code Skills
--#           %p These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.
--#         .large-4.medium-4.columns
--#           %a{:href => "http://foundation.zurb.com/forum"} Foundation Forum
--#           %p Join the Foundation community to ask a question or show off your knowlege.
--#       .row
--#         .large-4.medium-4.medium-push-2.columns
--#           %a{:href => "http://github.com/zurb/foundation"} Foundation on Github
--#           %p Latest code, issue reports, feature requests and more.
--#         .large-4.medium-4.medium-pull-2.columns
--#           %a{:href => "https://twitter.com/ZURBfoundation"} @zurbfoundation
--#           %p Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).
