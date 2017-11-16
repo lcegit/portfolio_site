@@ -18,25 +18,23 @@
       %title-bar.topbar-center-logo-mobile{'data-hide-for' => 'medium', 'data-responsive-toggle' => 'topbar-center-logo'}
         %title-bar-left
           %title-bar-title
-            %img{alt: '', src: 'https://placehold.it/100x39'}
-      -#   %title-bar-right
-      -#     %button.menu-icon{'data-toggle': 'topbar-center-logo', type: 'button'}
-      -# %topbar-center-logo.top-bar.topbar-center-logo
-      %top-bar-left
-        %ul.menu.vertical.medium-horizontal
-          %li.menu-text Lisa Eriksson Designer / Project Manager / Front-End Wannabe
-          %ul.dropdown.menu{"data-dropdown-menu" => ""}
-            -data.sitemap.each do |item|
-              %li
-                %a{href: "#{item.link}"}
-                  =item[:title]
-                -if item[:title] == 'Portfolio'
-                  %ul.menu
-                    -data.projects.each do |project|
-                      %a{href: "#{project.link}"}
-                        =project[:name]
-
-
+            -# %img{alt: '', src: 'https://placehold.it/100x39'}
+        %title-bar-right
+          %button.menu-icon{'data-toggle': 'topbar-center-logo', type: 'button'}
+      %topbar-center-logo.top-bar.topbar-center-logo
+        %top-bar-left
+          %ul.menu.vertical.medium-horizontal
+            %li.menu-text Lisa Eriksson Designer / Project Manager
+            %ul.dropdown.menu{"data-dropdown-menu" => ""}
+              -data.sitemap.each do |item|
+                %li
+                  %a{href: "#{item.link}"}
+                    =item[:title]
+                  -if item[:title] == 'Dev projects portfolio'
+                    %ul.menu
+                      -data.projects.each do |project|
+                        %a{href: "#{project.link}"}
+                          =project[:name]
 
 
 

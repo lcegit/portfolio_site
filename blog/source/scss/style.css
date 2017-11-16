@@ -1,6 +1,3 @@
-@import '/foundation/foundation';
-@import 'sass/_variables';
-
 
 body {
   padding: 0;
@@ -8,8 +5,8 @@ body {
   font-family: 'PT Sans', sans-serif;
   font-weight: normal;
   line-height: 1.5;
-  color: #FFFFFF;
-  background: #2c3840;
+  color: #2c3840;
+  background: #FFFFFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

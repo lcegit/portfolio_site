@@ -4,7 +4,7 @@
 - title: Resume
   link: resume.html
 
-- title: Portfolio
+- title: Dev projects portfolio
   link: portfolio.html
   # children:
     # -
@@ -19,6 +19,9 @@
     # -
     #   title: Item 4
     #   link: /portfolio/item4
+
+- title: Blog
+  link: about.html
 
 - title: About
   link: about.html

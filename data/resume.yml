@@ -1,31 +1,69 @@
+- company: Company
+  role: Role
+  details: Details
+  dates:
+
 - company: Forsman & Bodenfors Factory
-  role: Visual Designer
-  details: Responsiblities include developing programmatic digital campaigns and coaching digital producers.
+  role: Designer
+  details: Campaign content, design strategy and coaching digital producers.
+  dates: Aug. 2016 –
 
 - company: The Absolut Company
   role: Multidisciplinary Designer
-  details: Developed in-house studio for Kahlúa and Malibu brands where I produced branded content, digital design and assisted and directed campaign shoots.
+  details: Developed in-house studio for Kahlúa and Malibu brands where I produced branded content, digital design and directed and assisted campaign shoots.
+  dates: March 2015 – Aug. 2016
 
 - company: Cochlear
   role: Visual Designer
-  details: Responsible for producing digital design and content.
+  details: Digital design and content creation. Multimedia and instructionals.
+  dates: April 2014 – March 2015
+
+- company: Lisa Eriksson
+  role: Freelance Visual Designer
+  details: Various design work.
+  dates: April 2013 – March 2014
 
 - company: ICA
-  role: Visual Designer
+  role: Freelance Visual Designer
   details: Responsible for site redesigns, digital campaigns, development specs and implementation, coached digital producers.
+  dates: April 2012 – April 2013
 
 - company: Valentin & Byhr
-  role: Graphic Designer
+  role: Freelance Graphic Designer
   details: Assisted art directors with final art.
+  dates: Dec. 2011 – March 2012
 
 - company: Dear Area
-  role: Graphic Designer
+  role: Freelance Graphic Designer
   details: Responsibilities included developing brand identity; concept drawings, renderings, illustration and web design.
+  dates: April – Nov. 2011
 
 - company: Derome
   role: Graphic Designer / Project Manager
-  details: Responsibilities included developing marketing collateral: visual content, graphic profile, campaigns, brochures, renderings and photography.
+  details: Responsibilities included developing marketing material such as visual content, graphic profile, campaigns, brochures, renderings and photography.
+  dates: Sept. 2009 – April 2011
 
 - company: KBZ
   role: Graphic Designer / Project Manager
   details: Responsibilities included presentation drawings, request for proposals, graphic identity, web design, assisted librarian and interior designers with interior renderings, color boards, collateral design, signage drawings and specifications, maintenance of project database and drafting.
+  dates: Oct. 2001 – Dec. 2007
+
+- company: Education
+  role:
+  details:
+  dates:
+
+- company: Craft Academy
+  role:
+  details:
+  dates: Oct. 2017 - February 2018
+
+- company: San Francisco State University
+  role: Bachelor of Arts in Industrial Arts, Visual Communication
+  details:
+  dates: Jan. 2008 - Aug 2009
+
+- company: Santa Barbara City College
+  role: Associates of Liberal Arts
+  details:
+  dates: Jan. 2003 - Dec. 2007
