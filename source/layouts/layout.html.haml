@@ -13,31 +13,37 @@
     = stylesheet_link_tag 'style_modified'
     %body{class: page_classes}
 
-      -data.sitemap.each do |item|
-        %ul
-          %a{href: "#{item.link}"}
-            =item[:title]
-            -if item.children != nil
-              -item.children.each do |child|
-                %ul
-                  %a{href: "#{child.link}"}
-                    %li
-                      =child[:title]
+      %title-bar.topbar-center-logo-mobile{'data-hide-for' => 'medium', 'data-responsive-toggle' => 'topbar-center-logo'}
+        %title-bar-left
+          %title-bar-title
+            %img{alt: '', src: 'https://placehold.it/100x39'}
+        %title-bar-right
+          %button.menu-icon{'data-toggle': 'topbar-center-logo', type: 'button'}
+      %topbar-center-logo.top-bar.topbar-center-logo
+        %top-bar-left
+          %ul.menu.vertical.medium-horizontal
+            %li.menu-text Lisa Eriksson Designer / Project Manager / Front-End Wannabe
+            %ul.menu.dropdown{'data-dropdown-menu' => 'menu'}
+            -data.sitemap.each do |item|
+              %li= link_to item[:title], item[:link]
+              -if item.children != nil
+                %ul.menu
+                  -item.children.each do |child|
+                    %li= link_to child[:title], child[:link]
 
-        -# %ul
-        -#   %a{href: '#{item[:link]}'}
-        -#     %li
-        -#       =item[:title]
-        -#       =if item.children != nil
-        -#         %li
-        -#           =item.children[0][:title]
-        -#       =if item.children != nil
-        -#         =item.children.each do |child|
-        -#           %ul
-        -#             %a{href: '#{child[:link]}'}
-        -#               %li
-        -#                 =child[:title]
+      -#
+      -# -data.sitemap.each do |item|
+      -#   %ul
+      -#     %a{href: "#{item.link}"}
+      -#       =item[:title]
+      -#       -if item.children != nil
+      -#         -item.children.each do |child|
+      -#           %ul
+      -#             %a{href: "#{child.link}"}
+      -#               %li
+      -#                 =child[:title]
 
+      -#
       -# .title-bar.topbar-center-logo-mobile{'data-hide-for': 'medium', 'data-responsive-toggle': 'topbar-center-logo'}
       -#   .title-bar-left
       -#     .title-bar-title
