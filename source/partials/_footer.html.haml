@@ -5,9 +5,11 @@
     .footer-nav-left
     .footer-nav-center
       %ul.menu
-        = link_to 'LinkedIn', 'https://www.linkedin.com/in/lisaceriksson/'
-        = link_to 'Behance', 'https://www.behance.net/lisaeriksson'
-        %p
-          #{mail_to 'lisa.c.eriksson@gmail.com', "Email", :cc => "lisa.c.eriksson@gmail.com"}
+        = link_to image_tag('images/linkedin.svg', width: '35', height: '35'), 'https://www.linkedin.com/in/lisaceriksson/'
+        = link_to image_tag('images/behance.svg', width: '40', height: '40'), 'https://www.behance.net/lisaeriksson'
+        -# = link_to image_tag('images/instagram.svg', width: '35', height: '35'), 'https://www.isntagram.com/wyggii'
+
+      %p
+        #{mail_to 'lisa.c.eriksson@gmail.com', "Get in touch", :cc => "lisa.c.eriksson@gmail.com"}
 
     .footer-nav-right
