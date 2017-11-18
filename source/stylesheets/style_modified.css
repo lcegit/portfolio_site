@@ -72,6 +72,14 @@ a img {
   vertical-align: text-top;
 }
 
+.center {
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  width: 100%;
+  list-style-type: none;
+}
+
 /* Menu */
 
 .dropdown.menu .submenu {
@@ -102,25 +110,22 @@ a img {
   top: 20px;
 }
 
+
 .hero-section {
-  background: url('https://farm9.staticflickr.com/8886/18131958745_47433be3b8_b.jpg')
-    60% no-repeat;
+  background: url("http://www.lisaeriksson.net/lisas_middleman_site/tokyo_background_01.jpg") 70% no-repeat;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 50vh;
+  height: 60vh;
+  opacity: 0.4;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hero-section .hero-section-text {
@@ -142,6 +147,12 @@ a img {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.row-index {
+  max-width:200rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row-padding {
