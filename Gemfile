@@ -2,6 +2,8 @@
 # the following line to use 'http://' instead
 source 'https://rubygems.org'
 
+gem 'middleman-deploy', '= 2.0.0.pre.alpha'
+
 gem 'middleman', '~>4.1.2'
 gem 'middleman-sprockets', '~> 4.0.0.rc'
 gem 'middleman-compass'

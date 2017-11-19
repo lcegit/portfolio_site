@@ -1,5 +1,6 @@
 require "rspec"
 require "capybara/rspec"
+require 'middleman-deploy'
 
 require "middleman-core"
 require "middleman-core/rack"
