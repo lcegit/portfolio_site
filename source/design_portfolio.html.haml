@@ -1,3 +1,40 @@
 ---
-title: Design portfolio 
+title: Design portfolio
 ---
+-# .row
+-#   .row-padding
+-#     .row.small-up-2.medium-up-3.large-up-4
+-#       .column
+-#         %script#portfolio-template{:type => "text/x-handlebars-template"}
+-#         :cdata
+-#           %figure.profile-avatar
+-#             %img{:alt => "", :src => "{{user.images.[138]}}"}/
+-#             %h1.profile-name {{user.display_name}}
+-#             .profile-fields
+-#               %ul.field-list
+-#                 {{#each user.fields}}
+-#                 %li.field-item {{this}}
+-#                 {{/each}}
+-#             .profile-location.fi-marker {{user.city}}, {{user.country}}
+-#
+-#           %ul.portfolio-list.clearfix
+-#           {{#each projects}}
+-#             %li.portfolio-item
+-#             {{/each}}
+-#               .portfolio-content
+-#                 %figure.portfolio-cover{:title => "{{this.name}}"}
+-#                   {{#if this.covers.[404]}}
+-#                   %img.portfolio-image{:alt => "", :src => "{{this.covers.[404]}}"}/
+-#                   {{else}}
+-#                   {{#if this.covers.[230]}}
+-#                   %img.portfolio-image{:alt => "", :src => "{{this.covers.[230]}}"}/
+-#                   {{else}}
+-#                   %img.portfolio-image{:alt => "", :src => "{{this.covers.[202]}}"}/
+-#                   {{/if}}
+-#                   {{/if}}
+-#                 %h2.portfolio-title {{this.name}}
+-#                 .portfolio-fields
+-#                   %ul.field-list
+-#                     {{#each this.fields}}
+-#                     %li.field-item {{this}}
+-#                     {{/each}}

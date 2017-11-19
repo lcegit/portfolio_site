@@ -7,17 +7,23 @@
     %meta{content: 'width=device-width, initial-scale=1.0', name:'viewport'}
     %title= current_resource.data.title
     = javascript_include_tag 'modernizr'
+    = javascript_include_tag 'jquery.min'
+    = javascript_include_tag 'handlebars.min'
+    = javascript_include_tag 'behance'
     = stylesheet_link_tag 'style'
     = stylesheet_link_tag 'scss/foundation'
     = stylesheet_link_tag 'foundation/foundation'
     = stylesheet_link_tag 'scss/foundation'
     = stylesheet_link_tag 'style_modified'
+
+    %script#profile-template{:type => "text/x-handlebars-template"}
+    :cdata
+
     %body{class: page_classes}
 
 
 
     = partial 'partials/nav'
     = yield
-    = partial 'partials/about'
     = javascript_include_tag  'all'
     = partial 'partials/footer'
