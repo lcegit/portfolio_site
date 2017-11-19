@@ -25,5 +25,10 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 group :test do
   gem 'rspec', '~> 3.4'
-  gem 'capybara', '~> 2.5'
+  gem 'capybara', '~> 2.5'  
 end
+
+group :development, :test do
+  gem 'rspec'
+  gem 'capybara' #if you want to test the content of your site
+  gem 'pry-byebug' #used for debugging

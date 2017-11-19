@@ -1,0 +1,35 @@
+- name: My bootcamp site
+  description: Simple HTML5 I built during the prep course
+  img: /images/portfolio_placeholder.jpg
+  link: https://lcegit.github.io/
+
+- name: FizzBuzz
+  description: My first Test driven ruby project
+  img: /images/portfolio_placeholder.jpg
+  link:
+
+- name: BMI calculator
+  description: Test driven javascript project
+  img: /images/portfolio_placeholder.jpg
+  link:
+
+- name: Cooper test challenge
+  description: Cooper test description
+  img: /images/portfolio_placeholder.jpg
+  link:
+
+- name: Slow food
+  description: Slow food description
+  img: /images/portfolio_placeholder.jpg
+
+- name: Midcourse project
+  description:
+  img: /images/portfolio_placeholder.jpg
+
+- name: Agile methodologies, APIs, advanced Rails
+  description:
+  img: /images/portfolio_placeholder.jpg
+
+- name: Final project
+  description:
+  img: /images/portfolio_placeholder.jpg
