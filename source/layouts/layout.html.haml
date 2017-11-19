@@ -14,81 +14,9 @@
     = stylesheet_link_tag 'style_modified'
     %body{class: page_classes}
 
-      %title-bar.topbar-center-logo-mobile{'data-hide-for' => 'medium', 'data-responsive-toggle' => 'topbar-center-logo'}
-        %title-bar-left
-          %title-bar-title
-            -# %img{alt: '', src: 'https://placehold.it/100x39'}
-        %title-bar-right
-          %button.menu-icon{'data-toggle': 'topbar-center-logo', type: 'button'}
-      %topbar-center-logo.top-bar.topbar-center-logo
-        %top-bar-left
-          %ul.menu.vertical.medium-horizontal
-            %li.menu-text Lisa Eriksson
-            %li.menu-text Designer / Project Manager
-            %ul.dropdown.menu{"data-dropdown-menu" => ""}
-              -data.sitemap.each do |item|
-                %li
-                  %a{href: "#{item.link}"}
-                    =item[:title]
-                  -if item[:title] == 'Dev projects'
-                    %ul.menu
-                      -data.projects.each do |project|
-                        %a{href: "#{project.link}"}
-                          =project[:name]
 
 
-
-            -# %li
-            -#   %a{href: "http://www.gp.se"}
-            -#     gp
-            -#   %ul.class
-            -#     gpu
-
-              -# %ul.menu
-              -#   %a{href: "http://www.gp.se", "GP"}
-            -# -data.sitemap.each do |item|
-            -#   %li= link_to item[:title], item[:link]
-
-              -# -if item[:title] == 'Portfolio'
-              -#   %ul.menu
-              -#     -data.projects.each do |project|
-              -#       %li= link_to project[:name], project[:link]
-
-
-              -# %ul.menu
-              -#   %a{href: "#{item.link}"}
-              -#     =item[:title]
-              -#     -if item[:title] == 'Portfolio'
-              -#       -data.projects.each do |project|
-              -#         %li= link_to project[:name], project[:link]
-
-                  -# -if item.children != nil
-                    -# -item.children.each do |child|
-                    -#   %ul
-                    -#     %a{href: "#{child.link}"}
-                    -#       %li
-                    -#         =child[:title]
-
-              -# %ul.menu= link_to item[:title], item[:link]
-              -# -if item[:title] == 'Portfolio'
-              -#   -data.projects.each do |project|
-              -#     %li= link_to project[:name], project[:link]
-
-      -# -#
-      -# -data.sitemap.each do |item|
-      -#   %ul
-      -#     %a{href: "#{item.link}"}
-      -#       =item[:title]
-      -#       -if item.children != nil
-      -#         -item.children.each do |child|
-      -#           %ul
-      -#             %a{href: "#{child.link}"}
-      -#               %li
-      -#                 =child[:title]
-
-      -#
-    -#
-
+    = partial 'partials/nav'
     = yield
     = partial 'partials/about'
     = javascript_include_tag  'all'

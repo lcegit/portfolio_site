@@ -38,6 +38,12 @@ a img {
   border: 0;
 }
 
+.img-circle {
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 275px;
+}
+
 /* centered logo */
 
 .topbar-center-logo {
