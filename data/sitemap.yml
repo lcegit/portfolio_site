@@ -5,7 +5,7 @@
   link: resume.html
 
 - title: Design portfolio
-  link: design_portfolio.html
+  link: http://www.lisaeriksson.net/
 
 - title: Dev projects
   link: portfolio.html
@@ -23,8 +23,6 @@
     #   title: Item 4
     #   link: /portfolio/item4
 
-- title: Blog
-  link: about.html
 
 - title: About
   link: about.html
