@@ -1,4 +1,12 @@
-# Foundation 6 Middleman Template
+# My portfolio site
+
+This is a static portfolio site that is built using the framework Middleman and written with the templating language HAML. For styling, it employs the front-end framework Foundation.
+
+
+
+
+
+### Foundation 6 Middleman Template
 
 ** `master` works wtih Middleman 4; for Middleman 3, see the `v3` tag. I'm no longer maintaining `v3`.**
 
