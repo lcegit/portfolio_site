@@ -56,11 +56,18 @@ configure :development do
 end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def display_date
+    DateTime.now.strftime("%Y-%m-%d %H:%M")
+  end
+
+  # def scrape_lisas_site_content
+  #   require 'open-uri'
+  #   require 'net/http'
+  #
+  #   site-url = http://www.lisaeriksson.net
+
+end
 
 # Activate sprockets
 activate :sprockets
