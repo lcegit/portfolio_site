@@ -5,7 +5,7 @@
 
 - company: Forsman & Bodenfors Factory
   role: Designer
-  details: Campaign content, design strategy and coaching digital producers.
+  details: UX design, campaign content, design strategy, coaching digital producers.
   dates: Aug. 2016 –
 
 - company: The Absolut Company
@@ -15,17 +15,17 @@
 
 - company: Cochlear
   role: Visual Designer
-  details: Digital design and content creation. Multimedia and instructionals.
+  details: Digital design, photography, content creation, instructionals.
   dates: April 2014 – March 2015
 
 - company: Lisa Eriksson
   role: Freelance Visual Designer
-  details: Various design projects.
-  dates: April 2013 – March 2014
+  details: Design projects for various clients.
+  dates: April 2013 – Mavarious rch 2014
 
 - company: ICA
   role: Freelance Visual Designer
-  details: Responsible for site redesigns, digital campaigns, development specs and implementation, coached digital producers.
+  details: Responsible for site redesigns, digital campaigns, development specs and implementation, creative coach for digital producers.
   dates: April 2012 – April 2013
 
 - company: Valentin & Byhr
@@ -43,7 +43,7 @@
   details: Creating and producing marketing material such as visual content, graphic profile, campaigns, brochures, renderings and photography.
   dates: Sept. 2009 – April 2011
 
-- company: KBZ
+- company: KBZ Architects
   role: Graphic Designer / Project Manager
   details: Responsible for presentation drawings, request for proposals, graphic identity, web design, assisted librarian and interior designers with interior renderings, color boards, collateral design, signage drawings and specifications, maintenance of project database and drafting.
   dates: Oct. 2001 – Dec. 2007
@@ -55,7 +55,7 @@
 
 - company: Craft Academy
   role: Web development and agile methodologies
-  details: Version control – Git, Github. Languages – Ruby, Javascript, HAML, HTML, CSS. Frameworks – Bootstrap, Middleman, jQuery.
+  details: Languages – Ruby, Javascript, HAML, HTML, CSS. Frameworks – Bootstrap, Middleman, jQuery. Version control – Git, Github. Test driven development – RSpec and Jasmine.
   dates: Oct. 2017 - February 2018
 
 - company: San Francisco State University
