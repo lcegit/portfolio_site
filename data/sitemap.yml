@@ -2,13 +2,13 @@
   link: index.html
 
 - title: Resume
-  link: resume.html
+  link: "#resume"
 
 # - title: Design portfolio
 #   link: http://www.lisaeriksson.net/
 
 - title: Dev projects
-  link: portfolio.html
+  link: "#portfolio"
   # children:
     # -
     #   title: Item 1
@@ -25,4 +25,4 @@
 
 
 - title: About
-  link: about.html
+  link: "#about"
