@@ -44,6 +44,10 @@ a img {
     width: 250px;
 }
 
+.title-bar {
+    background: #2c3840;
+}
+
 /* centered logo */
 
 .topbar-center-logo {
