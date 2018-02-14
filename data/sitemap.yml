@@ -4,25 +4,11 @@
 - title: Resume
   link: "#resume"
 
-# - title: Design portfolio
-#   link: http://www.lisaeriksson.net/
+- title: Design portfolio
+  link: http://www.lisaeriksson.net/
 
 - title: Dev projects
   link: "#portfolio"
-  # children:
-    # -
-    #   title: Item 1
-    #   link: /portfolio/item1
-    # -
-    #   title: Item 2
-    #   link: /portfolio/item2
-    # -
-    #   title: Item 3
-    #   link: /portfolio/item3
-    # -
-    #   title: Item 4
-    #   link: /portfolio/item4
-
 
 - title: About
   link: "#about"
