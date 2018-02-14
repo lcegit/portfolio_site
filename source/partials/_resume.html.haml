@@ -1,0 +1,35 @@
+
+.row
+  .row-padding
+    .grid-container.full
+      .grid-x
+        .small-6-cell
+          %h3.center Resume
+          %h6
+            %strong Skills
+          -data.resume.each do |resume|
+            %p= resume[:skill]
+        .small-6-cell
+      .row-padding
+      .grid-x.grid-margin-x
+        .cell.small-4
+          %h6
+            %strong Company
+        .cell.small-4
+          %h6
+            %strong Role
+        .cell.small-4
+          %h6
+            %strong Details
+      .grid-x.grid-margin-x
+        .grid-padding-x
+        -data.resume.each do |resume|
+          .cell.small-4
+            %h6
+              %strong= resume[:company]
+            %h6= resume[:dates]
+          .cell.small-4
+            %h6
+              %strong= resume[:role]
+          .cell.small-4
+            %h6= resume[:details]

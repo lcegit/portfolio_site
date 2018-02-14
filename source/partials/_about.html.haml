@@ -1,10 +1,12 @@
 
 .row
   .row-padding
+    .img-circle
+      = image_tag 'http://www.lisaeriksson.net/lisas_middleman_site/lisaeriksson.jpg', :class => 'img-circle'
     .grid-container.full
-      .grid-x.grid-margin-x
-        -data.about.each do |about|
-          %h3.center= about[:name]
-          %h6= about[:description]
-          .small-6.cell
-          .small-6.cell
+    .grid-x.grid-margin-x
+      -data.about.each do |about|
+        %h3.center.row-padding= about[:name]
+        %h6= about[:description]
+        .small-6.cell
+        .small-6.cell

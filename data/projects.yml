@@ -1,35 +1,44 @@
-- name: My bootcamp site
-  description: Simple HTML5 I built during the prep course
-  img: /images/portfolio_placeholder.jpg
-  link: https://lcegit.github.io/
+# - name: My bootcamp site
+#   description: Simple HTML5 I built during the prep course
+#   img: /images/portfolio_placeholder.jpg
+#   link: https://lcegit.github.io/
 
 - name: FizzBuzz
   description: My first Test driven ruby project
-  img: /images/portfolio_placeholder.jpg
-  link:
+  img: /images/portfolio_ruby.png
+  link: https://github.com/lcegit/fizzbuzz_js
 
 - name: BMI calculator
   description: Test driven javascript project
-  img: /images/portfolio_placeholder.jpg
-  link:
+  img: /images/portfolio_js.png
+  link: https://github.com/lcegit/bmi_calculator
+
+- name: ATM simulator
+  description: A simple Ruby program
+  img: /images/portfolio_ruby.png
+  link: https://github.com/lcegit/atm_challenge
 
 - name: Cooper test challenge
   description: Cooper test description
-  img: /images/portfolio_placeholder.jpg
-  link:
+  img: /images/portfolio_js.png
+  link: https://github.com/lcegit/cooper_test_challenge
 
 - name: Slow food
   description: Slow food description
-  img: /images/portfolio_placeholder.jpg
+  img: /images/portfolio_sinatra.png
+  link: https://github.com/lcegit/slow_food_sinatra_mvc_st_erik
 
-- name: Midcourse project
-  description:
-  img: /images/portfolio_placeholder.jpg
+- name: iStory
+  description: An interactive journey
+  img: /images/portfolio_rails.png
+  link: https://github.com/lcegit/istory
 
-- name: Agile methodologies, APIs, advanced Rails
-  description:
-  img: /images/portfolio_placeholder.jpg
+- name: Dishley
+  description: Marketplace application
+  img: /images/portfolio_rails.png
+  link: https://jak-sie-masz-slowfood.herokuapp.com/
 
-- name: Final project
-  description:
-  img: /images/portfolio_placeholder.jpg
+- name: Timber
+  description: A private social family platform
+  img: /images/portfolio_rails.png
+  link: https://timber-ca.herokuapp.com/
