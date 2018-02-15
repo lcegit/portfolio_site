@@ -1,14 +1,15 @@
 
-.row
-  %a{name: "about"}
-  .row-padding
-    -# .img-circle
-    -#   = image_tag 'http://www.lisaeriksson.net/lisas_middleman_site/lisaeriksson.jpg', :class => 'img-circle'
-    .grid-container.full
-    .grid-x.grid-margin-x
-      -data.about.each do |about|
-        %h3.center.row-padding= about[:name]
-        %h5.center.row-padding= about[:title]
-        %h6= about[:description]
-        .small-6.cell
-        .small-6.cell
+.grid-x
+  .row
+    %a{name: "about"}
+    .row-padding
+      -# .img-circle
+      -#   = image_tag 'http://www.lisaeriksson.net/lisas_middleman_site/lisaeriksson.jpg', :class => 'img-circle'
+      .grid-container.full
+      .grid-x.grid-margin-x
+        -data.about.each do |about|
+          %h3.center.row-padding= about[:name]
+          %h5.center.row-padding= about[:title]
+          %h6= about[:description]
+          .small-6.cell
+          .small-6.cell

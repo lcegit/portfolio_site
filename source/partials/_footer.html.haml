@@ -4,11 +4,11 @@
     .footer-nav-left
     .footer-nav-center
       %ul.menu
-        = link_to image_tag('images/github_w.svg', width: '30', height: '30'), 'https://www.github.com/lcegit'
-        = link_to image_tag('images/linkedin_w.svg', width: '30', height: '30'), 'https://www.linkedin.com/in/lisaceriksson/'
-        = link_to image_tag('images/behance_w.svg', width: '30', height: '30'), 'https://www.behance.net/lisaeriksson'
-        = link_to image_tag('images/instagram_w.svg', width: '30', height: '30'), 'https://www.instagram.net/wyggii'
-        = link_to image_tag('images/flickr_w.svg', width: '30', height: '30'), 'https://www.flickr.com/wyggii'
+        = link_to image_tag('images/github_w.svg', class: 'logo'), 'https://www.github.com/lcegit'
+        = link_to image_tag('images/linkedin_w.svg', class: 'logo'), 'https://www.linkedin.com/in/lisaceriksson/'
+        = link_to image_tag('images/behance_w.svg', class: 'logo'), 'https://www.behance.net/lisaeriksson'
+        = link_to image_tag('images/instagram_w.svg', class: 'logo'), 'https://www.instagram.com/wyggii'
+        = link_to image_tag('images/flickr_w.svg', class: 'logo'), 'https://www.flickr.com/wyggii'
 
       %p
         #{mail_to 'lisa.c.eriksson@gmail.com', "Get in touch", :cc => "lisa.c.eriksson@gmail.com"}
