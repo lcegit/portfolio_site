@@ -20,7 +20,6 @@
 
     -# %script#profile-template{:type => "text/x-handlebars-template"}
     -# :cdata
-
     %body{class: page_classes}
 
 
@@ -28,7 +27,7 @@
     = partial 'partials/nav'
     = yield
     = javascript_include_tag  'all'
+    = partial 'partials/about'
     = partial 'partials/portfolio'
     = partial 'partials/resume'
-    = partial 'partials/about'
     = partial 'partials/footer'

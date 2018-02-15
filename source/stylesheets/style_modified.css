@@ -41,11 +41,20 @@ a img {
 .img-circle {
     border-radius: 50%;
     margin: 0 auto;
-    width: 250px;
+    width: 200px;
 }
 
 .title-bar {
     background: #2c3840;
+}
+
+.parallax {
+    background: url("http://www.lisaeriksson.net/lisas_middleman_site/tokyo_background_01.jpg") 70% no-repeat;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* centered logo */
@@ -139,7 +148,7 @@ a img {
 
 .hero-section .hero-section-text {
   color: #fefefe;
-  /*text-shadow: 1px 1px 1px #0a0a0a;*/
+  text-shadow: 1px 1px 1px #0a0a0a;
 }
 
 .footer {
@@ -165,7 +174,7 @@ a img {
 }
 
 .row-padding {
-  padding-top: 3em;
+  padding-top: 2em;
 }
 
 .cell.small-4 {
