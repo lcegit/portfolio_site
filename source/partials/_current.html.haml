@@ -1,0 +1,8 @@
+.grid-x
+  .row
+    %a{name: "current"}
+    .row
+      .grid-container.full
+      .grid-x.grid-margin-x
+        -data.current.each do |current|
+          %h3.center.row-padding= current[:name]
