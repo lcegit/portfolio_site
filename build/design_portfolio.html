@@ -7,6 +7,7 @@
 <meta content='width=device-width, initial-scale=1.0' name='viewport'>
 <title>Design portfolio</title>
 <script src="javascripts/modernizr.js"></script>
+<script src="javascripts/instafeed.js"></script>
 <link href="stylesheets/style.css" rel="stylesheet" />
 <link href="stylesheets/scss/foundation.css" rel="stylesheet" />
 <link href="stylesheets/foundation/foundation.css" rel="stylesheet" />
@@ -89,6 +90,7 @@ About
 <p>I’m multidisciplinary designer with creative, strategic and technical capabilities in my spectrum. I enjoy crafting visually compelling communication and services and have experience in visual design and content creation for global brands. I'm currently working as a visual designer at F&B Factory. When I'm not working, I enjoy travelling, photography, art and design.</p>
 <div class='small-6 cell'></div>
 <div class='small-6 cell'></div>
+<a href="mailto:lisa.c.eriksson@gmail.com?cc=lisa.c.eriksson@gmail.com" class="button">Contact me</a>
 </div>
 </div>
 </div>
@@ -406,6 +408,26 @@ About
 </div>
 </div>
 
+<div class='grid-x'>
+<div class='row'>
+<div class='grid-x grid-margin-x'>
+<div id='instagram'>
+<script>
+  feed = new Instafeed({
+      get: 'user',
+      userId: 220197657,
+      clientId: '3cdb02c41faf47528f1decee3512f4d9',
+      accessToken: '220197657.3cdb02c.ff452d23060e45f3ae7e04f206772d18',
+      target: 'instagram',
+      template: '<a href="{{link}}"><img src="{{image}}" /></a>',
+      limit: 8,
+  });
+  feed.run();
+</script>
+</div>
+</div>
+</div>
+</div>
 <footer>
 <div class='footer footer-nav row expanded collapse'>
 <div class='footer-nav-left'></div>

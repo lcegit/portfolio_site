@@ -1,3 +1,18 @@
+.grid-x
+  .row
+    .grid-x.grid-margin-x
+      #instagram
+        :javascript
+          feed = new Instafeed({
+              get: 'user',
+              userId: 220197657,
+              clientId: '3cdb02c41faf47528f1decee3512f4d9',
+              accessToken: '220197657.3cdb02c.ff452d23060e45f3ae7e04f206772d18',
+              target: 'instagram',
+              template: '<a href="{{link}}"><img src="{{image}}" /></a>',
+              limit: 8,
+          });
+          feed.run();
 
 %footer
   .footer.footer-nav.row.expanded.collapse
