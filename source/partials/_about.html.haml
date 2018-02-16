@@ -10,6 +10,7 @@
         -data.about.each do |about|
           %h3.center.row-padding= about[:name]
           %h5.center.row-padding= about[:title]
-          %h6= about[:description]
+          %p= about[:description]
           .small-6.cell
           .small-6.cell
+          #{mail_to 'lisa.c.eriksson@gmail.com', "Contact me", :cc => "lisa.c.eriksson@gmail.com", class: "button"}
