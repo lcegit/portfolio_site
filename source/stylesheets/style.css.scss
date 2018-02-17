@@ -31,14 +31,18 @@ body {
 
 $lg: 580px;
 
-#instafeed {
+#instagram {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  height: auto;
+  display: inline-flex;
 
   a {
     position: relative;
-    width: 50%;
+    width: 25%;
 
     @media only screen and (min-width: $lg) {
       width: 25%
@@ -46,8 +50,8 @@ $lg: 580px;
 
     img {
       display: block;
-      width: 100%;
-      height: 100%;
+      width: 95%;
+      height: 95%;
     }
   }
 }
@@ -94,14 +98,29 @@ a img {
 }
 
 .parallax {
-    background: url("http://www.lisaeriksson.net/lisas_middleman_site/tokyo_background_01.jpg") 80% no-repeat;
-    min-height: 40vh;
-    min-width: 10vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: url("http://www.lisaeriksson.net/lisas_middleman_site/tokyo_background_01.jpg") 80% no-repeat;
+  min-height: 40vh;
+  min-width: 120vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+// .parallax {
+//     height: 500px;
+//     background: url("http://www.lisaeriksson.net/lisas_middleman_site/tokyo_background_01.jpg") 80% no-repeat;
+//     background-attachment: fixed;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: 100% auto;
+// }
+@media screen and (max-width: 768px) {
+	.parallax {
+		background-attachment: inherit;
+	}
+}
+
 
 /* centered logo */
 
@@ -239,6 +258,10 @@ a img {
 
 .row-padding {
   padding-top: 1em;
+}
+
+.extra-padding {
+  padding: 2em;
 }
 
 .cell.small-4 {

@@ -9,28 +9,24 @@
               clientId: '3cdb02c41faf47528f1decee3512f4d9',
               accessToken: '220197657.3cdb02c.ff452d23060e45f3ae7e04f206772d18',
               target: 'instagram',
-              template: '<a href="{{link}}"><img src="{{image}}" /></a>',
+              template: '<a href="{{link}}"><img src="{{image}}"/></a>',
               limit: 8,
+              sortBy: 'random',
           });
           feed.run();
 
 %footer
-  .footer.footer-nav.row.expanded.collapse
-    .footer-nav-left
-    .footer-nav-center
-      %ul.menu
-        = link_to image_tag('images/github_w.svg', class: 'logo'), 'https://www.github.com/lcegit'
-        = link_to image_tag('images/linkedin_w.svg', class: 'logo'), 'https://www.linkedin.com/in/lisaceriksson/'
-        = link_to image_tag('images/behance_w.svg', class: 'logo'), 'https://www.behance.net/lisaeriksson'
-        = link_to image_tag('images/instagram_w.svg', class: 'logo'), 'https://www.instagram.com/wyggii'
-        = link_to image_tag('images/flickr_w.svg', class: 'logo'), 'https://www.flickr.com/wyggii'
+  .extra-padding
+    .footer.footer-nav.row.expanded.collapse
+      .footer-nav-left
+      .footer-nav-center
+        %ul.menu
+          = link_to image_tag('images/github_w.svg', class: 'logo'), 'https://www.github.com/lcegit'
+          = link_to image_tag('images/linkedin_w.svg', class: 'logo'), 'https://www.linkedin.com/in/lisaceriksson/'
+          = link_to image_tag('images/behance_w.svg', class: 'logo'), 'https://www.behance.net/lisaeriksson'
+          = link_to image_tag('images/instagram_w.svg', class: 'logo'), 'https://www.instagram.com/wyggii'
+          = link_to image_tag('images/flickr_w.svg', class: 'logo'), 'https://www.flickr.com/wyggii'
 
-      %p
-        #{mail_to 'lisa.c.eriksson@gmail.com', "Get in touch", :cc => "lisa.c.eriksson@gmail.com"}
-
-      -# %h7
-      -#   Created at
-      -#   = display_date
-      -#
-
-      .footer-nav-right
+        %p
+          #{mail_to 'lisa.c.eriksson@gmail.com', "Get in touch", :cc => "lisa.c.eriksson@gmail.com"}
+        .footer-nav-right

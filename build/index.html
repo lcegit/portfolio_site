@@ -77,26 +77,37 @@ About
 </div>
 </div>
 
-<div class='row-index'>
+<div class='grid-x'>
 <a name='index'>
-<div class='parallax logos'>
+<div class='parallax'>
 </div>
 </a>
 </div>
 
 <script src="javascripts/all.js"></script>
 <div class='grid-x'>
+<div class='row-padding'>
 <div class='row'>
 <a name='about'></a>
-<div class='row-padding'>
-<div class='grid-container full'></div>
-<div class='grid-x grid-margin-x'>
+<div class='grid-x'>
 <h3 class='center row-padding'>About me</h3>
 <h5 class='center row-padding'>Designer / Junior Developer / Project Manager</h5>
 <p>I’m multidisciplinary designer with creative, strategic and technical capabilities in my spectrum. I enjoy crafting visually compelling communication and services and have experience in visual design and content creation for global brands. I'm currently working as a visual designer at F&B Factory. When I'm not working, I enjoy travelling, photography, art and design.</p>
 <div class='small-6 cell'></div>
 <div class='small-6 cell'></div>
 <a href="mailto:lisa.c.eriksson@gmail.com?cc=lisa.c.eriksson@gmail.com" class="button">Contact me</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class='grid-x'>
+<div class='row'>
+<a name='current'></a>
+<div class='row'>
+<div class='grid-container full'></div>
+<div class='grid-x grid-margin-x'>
+<h3 class='center row-padding'>Current projects</h3>
 </div>
 </div>
 </div>
@@ -425,8 +436,9 @@ About
       clientId: '3cdb02c41faf47528f1decee3512f4d9',
       accessToken: '220197657.3cdb02c.ff452d23060e45f3ae7e04f206772d18',
       target: 'instagram',
-      template: '<a href="{{link}}"><img src="{{image}}" /></a>',
+      template: '<a href="{{link}}"><img src="{{image}}"/></a>',
       limit: 8,
+      sortBy: 'random',
   });
   feed.run();
 </script>
@@ -435,6 +447,7 @@ About
 </div>
 </div>
 <footer>
+<div class='extra-padding'>
 <div class='footer footer-nav row expanded collapse'>
 <div class='footer-nav-left'></div>
 <div class='footer-nav-center'>
@@ -449,6 +462,7 @@ About
 <a href="mailto:lisa.c.eriksson@gmail.com?cc=lisa.c.eriksson@gmail.com">Get in touch</a>
 </p>
 <div class='footer-nav-right'></div>
+</div>
 </div>
 </div>
 </footer>
