@@ -1,13 +1,13 @@
-
 .row
   %a{name: "about"}
-  .row-padding
-    .img-circle
-      = image_tag 'http://www.lisaeriksson.net/lisas_middleman_site/lisaeriksson.jpg', :class => 'img-circle'
-    .grid-container.full
-    .grid-x.grid-margin-x
-      -data.about.each do |about|
-        %h3.center.row-padding= about[:name]
-        %h6= about[:description]
-        .small-6.cell
-        .small-6.cell
+    .row-padding
+      .grid-container.full
+        .cell.auto
+          -data.about.each do |about|
+            %h3.center.row-padding= about[:name]
+            %h5.center.row-padding= about[:title]
+            %p= about[:description]
+        .cell.small-4
+        .grid-x
+          .cell
+          #{mail_to 'lisa.c.eriksson@gmail.com', "Contact me", :cc => "lisa.c.eriksson@gmail.com", class: "button"}

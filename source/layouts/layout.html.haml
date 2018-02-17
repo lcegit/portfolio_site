@@ -7,6 +7,7 @@
     %meta{content: 'width=device-width, initial-scale=1.0', name:'viewport'}
     %title= current_resource.data.title
     = javascript_include_tag 'modernizr'
+    = javascript_include_tag 'instafeed'
     -# = javascript_include_tag 'foundation.core'
     -# = javascript_include_tag 'foundation.sticky'
     -# = javascript_include_tag 'jquery.min'
@@ -17,10 +18,10 @@
     = stylesheet_link_tag 'foundation/foundation'
     = stylesheet_link_tag 'scss/foundation'
     = stylesheet_link_tag 'style_modified'
+    = stylesheet_link_tag 'style'
 
     -# %script#profile-template{:type => "text/x-handlebars-template"}
     -# :cdata
-
     %body{class: page_classes}
 
 
@@ -28,7 +29,8 @@
     = partial 'partials/nav'
     = yield
     = javascript_include_tag  'all'
+    = partial 'partials/about'
+    = partial 'partials/current'
     = partial 'partials/portfolio'
     = partial 'partials/resume'
-    = partial 'partials/about'
     = partial 'partials/footer'

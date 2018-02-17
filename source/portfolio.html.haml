@@ -2,11 +2,12 @@
 title: Bootcamp portfolio page
 ---
 
-.row
-  .row-padding
-    .row.small-up-2.medium-up-3.large-up-4
-      -data.projects.each do |project|
-        .column
-          %img= image_tag project[:img]
-          %h5= project[:name]
-          %h7= project[:description]
+.grid-x
+  .row
+    .row-padding
+      .row.small-up-2.medium-up-3.large-up-4
+        -data.projects.each do |project|
+          .column
+            %img= image_tag project[:img]
+            %h5= project[:name]
+            %h7= project[:description]

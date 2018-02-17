@@ -1,8 +1,3 @@
-# - name: My bootcamp site
-#   description: Simple HTML5 I built during the prep course
-#   img: /images/portfolio_placeholder.jpg
-#   link: https://lcegit.github.io/
-
 - name: FizzBuzz
   description: My first Test driven ruby project
   img: /images/portfolio_ruby.png
