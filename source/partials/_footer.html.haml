@@ -20,13 +20,11 @@
     .footer.footer-nav.row.expanded.collapse
       .footer-nav-left
       .footer-nav-center
-        %ul.menu
-          = link_to image_tag('images/github_w.svg', class: 'logo'), 'https://www.github.com/lcegit'
-          = link_to image_tag('images/linkedin_w.svg', class: 'logo'), 'https://www.linkedin.com/in/lisaceriksson/'
-          = link_to image_tag('images/behance_w.svg', class: 'logo'), 'https://www.behance.net/lisaeriksson'
-          = link_to image_tag('images/instagram_w.svg', class: 'logo'), 'https://www.instagram.com/wyggii'
-          = link_to image_tag('images/flickr_w.svg', class: 'logo'), 'https://www.flickr.com/wyggii'
-
-        %p
-          #{mail_to 'lisa.c.eriksson@gmail.com', "Get in touch", :cc => "lisa.c.eriksson@gmail.com"}
+        %ul.menu.space
+          = link_to ('<i class="fab fa-github fa-2x"></i>'), 'https://www.github.com/lcegit'
+          = link_to ('<i class="fab fa-linkedin-in fa-2x"></i>'), 'https://www.linkedin.com/in/lisaceriksson/'
+          = link_to ('<i class="fab fa-instagram fa-2x"></i>'), 'https://www.instagram.com/wyggii'
+          = link_to ('<i class="fab fa-flickr fa-2x"></i>'), 'https://www.flickr.com/wyggii'
+          = link_to ('<i class="fab fa-behance fa-2x"></i>'), 'https://www.behance.net/lisaeriksson'
+          #{mail_to 'lisa.c.eriksson@gmail.com', ('<i class="far fa-envelope fa-2x"></i>'), :cc => "lisa.c.eriksson@gmail.com"}
         .footer-nav-right
