@@ -1,12 +1,17 @@
-- name: FizzBuzz
-  description: My first Test driven ruby project
-  img: /images/portfolio_ruby.png
-  link: https://github.com/lcegit/fizzbuzz_js
+- name: iStory
+  description: An interactive journey
+  img: /images/portfolio_rails.png
+  link: https://github.com/lcegit/istory
 
-- name: BMI calculator
-  description: Test driven javascript project
-  img: /images/portfolio_js.png
-  link: https://github.com/lcegit/bmi_calculator
+- name: Dishley
+  description: Marketplace application
+  img: /images/portfolio_rails.png
+  link: https://jak-sie-masz-slowfood.herokuapp.com/
+
+- name: Timber
+  description: A private social family platform
+  img: /images/portfolio_rails.png
+  link: https://timber-ca.herokuapp.com/
 
 - name: ATM simulator
   description: A simple Ruby program
@@ -23,17 +28,12 @@
   img: /images/portfolio_sinatra.png
   link: https://github.com/lcegit/slow_food_sinatra_mvc_st_erik
 
-- name: iStory
-  description: An interactive journey
-  img: /images/portfolio_rails.png
-  link: https://github.com/lcegit/istory
+- name: FizzBuzz
+  description: My first Test driven ruby project
+  img: /images/portfolio_ruby.png
+  link: https://github.com/lcegit/fizzbuzz_js
 
-- name: Dishley
-  description: Marketplace application
-  img: /images/portfolio_rails.png
-  link: https://jak-sie-masz-slowfood.herokuapp.com/
-
-- name: Timber
-  description: A private social family platform
-  img: /images/portfolio_rails.png
-  link: https://timber-ca.herokuapp.com/
+- name: BMI calculator
+  description: Test driven javascript project
+  img: /images/portfolio_js.png
+  link: https://github.com/lcegit/bmi_calculator
